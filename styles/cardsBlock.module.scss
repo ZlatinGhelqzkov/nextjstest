@@ -1,0 +1,106 @@
+.Container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @media(max-width: 1024px) {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.Container svg {
+  margin-right: 50px;
+}
+
+.Content_image {
+  margin-right: 100px;
+  @media(max-width: 1024px) {
+    margin-right: 0px;
+    margin-bottom: 50px;
+  }
+}
+
+.CardsBlock {
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  @media(max-width: 1024px) {
+    margin-bottom: 50px;
+    padding-left: 100px;
+  }
+}
+
+.Card_brief {
+  display: flex;
+  text-align: left;
+  align-items: center;
+  padding: 25px 30px 25px 30px;
+  box-sizing: border-box;
+  background-color: #F1F1F1;
+  margin-bottom: 30px;
+  border: 2px solid transparent;
+  border-radius: 10px;
+}
+
+.Card_search {
+  @extend .Card_brief;
+}
+
+.Card_pitch {
+  @extend .Card_brief;
+  margin-bottom: 0px;
+}
+
+.Card_brief > .Card_inner p {
+  width: 300px;
+}
+
+.Card_search > .Card_inner p {
+  width: 350px;
+}
+
+.Card_pitch > .Card_inner p {
+  width: 400px;
+}
+
+.Card_inner h3 {
+  display: inline-block;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.Card_inner p {
+  line-height: 25px;
+  font-weight: 500;
+}
+
+.Card_inner strong {
+  font-weight: 700;
+}
+
+.Card_brief:hover {
+  border: 2px solid #006EFD;
+}
+
+.Card_brief:hover h3 {
+  color: #006EFD;
+}
+
+.Card_brief:hover h3:before {
+  content: "";
+   position: absolute;
+   width: 100%;
+   height: 2px;
+   bottom: 0;
+   left: 0;
+   background-color: #79AFF7;
+}
+
+.Card_title {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 10px;
+}
